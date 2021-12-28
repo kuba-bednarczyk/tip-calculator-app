@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  background-color: #c5e4e7;
+}
+
+.logo {
+  margin: 0 auto;
+  margin-top: 50px;
+  background-image: url("/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 55px;
+  width: 120px;
+  background-position: center center;
+}
+
+.calculator {
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 23px;
+  padding: 33px;
+}
+.calculator h3 {
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #5e7a7d;
+}
+.calculator input[type=number] {
+  -moz-appearance: textfield;
+}
+.calculator input::-webkit-inner-spin-button, .calculator input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calculator__bill input, .calculator__num-people input {
+  text-align: right;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0 16px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  height: 40px;
+  font-size: 20px;
+  background-color: #f4fafa;
+  color: #00494d;
+}
+.calculator__bill input:focus, .calculator__num-people input:focus {
+  outline: solid 2px #26c0ab;
+}
+.calculator__bill input::placeholder, .calculator__num-people input::placeholder {
+  color: #7f9c9f;
+}
+.calculator__bill label, .calculator__num-people label {
+  position: relative;
+}
+.calculator__bill label::before, .calculator__num-people label::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  transform: translateY(-40%);
+  bottom: 0;
+  left: 10px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.calculator__bill label::before {
+  background-image: url("/images/icon-dollar.svg");
+}
+.calculator__select-tip {
+  margin-top: 2.5rem;
+}
+.calculator__select-tip .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 3.125rem);
+  grid-gap: 10px;
+}
+.calculator__select-tip .grid__btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #00494d;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.calculator__select-tip .grid__btn:focus, .calculator__select-tip .grid__btn:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+  cursor: pointer;
+}
+.calculator__select-tip .grid__btn--costum {
+  text-align: right;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0 16px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  background-color: #f4fafa;
+  color: #00494d;
+}
+.calculator__select-tip .grid__btn--costum:focus {
+  outline: solid 2px #26c0ab;
+}
+.calculator__select-tip .grid__btn--costum:focus, .calculator__select-tip .grid__btn--costum:hover {
+  background-color: #f4fafa;
+}
+.calculator__select-tip .grid__btn--costum::placeholder {
+  color: #00494d;
+  opacity: 0.7;
+}
+.calculator__num-people {
+  margin-top: 2.5rem;
+}
+.calculator__num-people label::before {
+  background-image: url("/images/icon-person.svg");
+}
+
+/*# sourceMappingURL=main.css.map */
