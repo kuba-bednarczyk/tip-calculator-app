@@ -74,11 +74,13 @@
                 color: $white;
                 font-size: 24px;
                 font-weight: $boldW;
+                transition: all .2s ease-in-out;
 
-                &:focus, &:hover{
-                    background-color: $strongCyan;
-                    color: $veryDarkCyan;
+                &:hover{
                     cursor: pointer;
+                    background-color: $strongCyanLight;
+                    color: $veryDarkCyan;
+                    transition: all .2s ease-in-out;
                 }
 
                 &--costum{
@@ -161,9 +163,11 @@
         text-transform: uppercase;
         font-size: 24px;
         position: relative;
+        transition: all .2s ease-in-out;
         &:hover{
             cursor: pointer;
             background-color: $strongCyanLight;
+            transition: all .2s ease-in-out;
         }
     }
 
@@ -180,6 +184,15 @@
             &:focus{
                 outline: solid 2px orange;
             }
+        }
+    }
+
+    .active{
+        background-color: $strongCyan;
+        color: $veryDarkCyan;
+        &:hover{
+            background-color: $strongCyan;
+            color: $veryDarkCyan;
         }
     }
 

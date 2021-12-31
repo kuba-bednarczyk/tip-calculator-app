@@ -26,19 +26,19 @@
       <div class="calculator__select-tip">
         <h3>Select Tip %</h3>
         <div class="grid">
-          <button class="grid__btn grid__btn--5">5%</button>
-          <button class="grid__btn grid__btn--10">10%</button>
-          <button class="grid__btn grid__btn--15">15%</button>
-          <button class="grid__btn grid__btn--25">25%</button>
-          <button class="grid__btn grid__btn--50">50%</button>
-          <input type="number" class="grid__btn grid__btn--costum" placeholder="Custom" min="0" max="100">
+          <button class="grid__btn tip-percent">5%</button>
+          <button class="grid__btn tip-percent">10%</button>
+          <button class="grid__btn tip-percent active">15%</button>
+          <button class="grid__btn tip-percent">25%</button>
+          <button class="grid__btn tip-percent">50%</button>
+          <input type="number" class="grid__btn grid__btn--costum tip-percent-c" placeholder="Custom" min="0" max="100">
         </div>
       </div>
 
       <div class="calculator__num-people">
         <h3>Number of People</h3>
         <label for="">
-          <input type="number" class="numOfPeople-input" placeholder="0" min="0">
+          <input type="number" class="people-input" placeholder="0" min="0">
         </label>
         
       </div>
@@ -50,7 +50,7 @@
         <h2>Tip Amount</h2>
         <p>/person</p>
         <div class="tip">
-          <p class="tip__amount">$0.00</p>
+          <p class="tip__amount"></p>
         </div>
         
       </div>
@@ -59,35 +59,12 @@
         <h2>Total</h2>
         <p>/person</p>
         <div class="tip">
-          <p class="tip__total">$0.00</p>
+          <p class="tip__total"></p>
         </div>
       </div>
       <button class="calculator__reset">reset</button>
     </div>
-
-    
   </div>
-
-
-  <!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
 
   <script src="app/app.js"></script>
 </body>

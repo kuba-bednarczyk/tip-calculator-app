@@ -95,11 +95,13 @@ body {
   color: white;
   font-size: 24px;
   font-weight: 700;
+  transition: all 0.2s ease-in-out;
 }
-.calculator__select-tip .grid__btn:focus, .calculator__select-tip .grid__btn:hover {
-  background-color: #26c0ab;
-  color: #00494d;
+.calculator__select-tip .grid__btn:hover {
   cursor: pointer;
+  background-color: #7fe6d8;
+  color: #00494d;
+  transition: all 0.2s ease-in-out;
 }
 .calculator__select-tip .grid__btn--costum {
   text-align: right;
@@ -177,10 +179,12 @@ body {
   text-transform: uppercase;
   font-size: 24px;
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 .calculator__reset:hover {
   cursor: pointer;
   background-color: #7fe6d8;
+  transition: all 0.2s ease-in-out;
 }
 .calculator .zero-alert h3::after {
   content: "Can't be zero";
@@ -192,6 +196,14 @@ body {
 }
 .calculator .zero-alert input:focus {
   outline: solid 2px orange;
+}
+.calculator .active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+.calculator .active:hover {
+  background-color: #26c0ab;
+  color: #00494d;
 }
 
 /*# sourceMappingURL=main.css.map */
