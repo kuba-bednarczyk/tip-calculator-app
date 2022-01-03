@@ -48,9 +48,9 @@ function peopleInputFunc(){
 
 function handleClick(event){
     tipBtns.forEach(elem => {
-        elem.classList.remove("active");
+        elem.classList.remove('active');
         if (event.target.innerHTML == elem.innerHTML) {
-          elem.classList.add("active");
+          elem.classList.add('active');
           tipValue = parseFloat(elem.innerHTML) / 100;
           tipCostum.value = '';
         }
@@ -83,6 +83,10 @@ function resetInputs(){
     tipPerPerson.innerHTML = '$' + (0.00).toFixed(2);
     totalPerPerson.innerHTML = '$' + (0.00).toFixed(2);
     peopleBox.classList.remove('zero-alert');
+    tipBtns.forEach( btn => {
+        btn.classList.remove('active');
+    });
+    tipBtns[2].classList.add('active');
 }
 
 
